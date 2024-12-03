@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello chan,s Portfolio</title>
+    <!-- tailwindcss cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="modalstyles.css" />
+   
+</head>
+<body class="bg-gray-700">
+    
+    <!-- navbar -->
+    <!-- 
+        position : sticky = fixed + static
+        top = position값
+        inset-0 = top bottom left right 전부 0
+        z-index = z-10
+        w-1/4 = 25%
+        p-2 = padding
+    -->
+    <header class="sticky top-0 w-full z-10 bg-black pr-10 pl-10">
+        <nav class="flex w-full p-2 justify-between"> 
+            <a class="flex text-2xl font-bold text-white text-left py-3 px-5">CHAN's</a>
+        <ul class="flex">
+            <li>
+                <a href="" class="flex text-lg font-semibold text-white py-4 px-7 hover:bg-white text-center hover:text-black">Home</a>
+            </li>
+            <li>
+                <a href="#about" class="flex text-lg font-semibold text-white py-4 px-7 hover:bg-white text-center hover:text-black">About</a>
+            </li>
+            <li>
+                <a href="#project" class="flex text-lg font-semibold text-white py-4 px-7 hover:bg-white text-center hover:text-black">Project</a>
+            </li>
+            <li>
+                <a href="#contact" class="flex text-lg font-semibold text-white py-4 px-7 hover:bg-white text-center hover:text-black">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    </header>       
+ 
+
+    <!-- main image -->
+    <!-- 
+        h = height
+        custom = 대괄호[]
+        justify = 공간을 나눠 갖는다
+        md:visible = 미디움 사이즈 이상부터 보인다
+        px = paddig x축
+     -->
+    <div class="h-[500px] bg-[url('https://github.com/chanss95/portpolio/blob/main/2.png?raw=true')] bg-cover bg-center
+    grayscale-[30%]">
+        <div class="h-[450px] flex flex-col justify-center">
+            <h1 class="text-8xl text-center text-white">
+                <span class="inline-block mt-8" style="text-shadow:2px 2px 2px #000;">
+                    Front-end Developer
+                </span>
+            </h1>
+        </div>
+    </div>
+
+
+    <!-- mian -->
+    <!--  
+        max-w = max width
+        tracking-widest = letter spacing 글자 간격 사이 띄우기
+        mt - margin top
+        my - margin y 축
+     -->
+    <main class="max-w-screen-md mx-auto">
+
+        <!-- about -->
+        <div id="about" class="py-40">
+            <h1 class="text-5xl text-center tracking-widest">
+                <span class="text-white font-bold">ABOUT</span>
+            </h1>
+            <div class="mt-8 ml-60 mr-60 border-t-8 border-t-white rounded"></div>
+        </div>
+
+        <section class="my-40 tracking-widest">
+            <div>
+                <h3 class="font-semibold text-2xl text-white pb-5">-ABOUT ME</h3>
+
+                <p class="m-5 text-white">안녕하세요 성장을 바탕으로 무궁무진한 가능성을 즐기는 개발자 박찬수 입니다.</p>
+                <p class="m-5 mb-20 text-white">시간을 내어 저의 포트폴리오를 봐주셔서 감사합니다.</p>
+            </div>
+                         
+             <div>
+                <h3 class="font-semibold text-2xl text-white pb-5">-EDUCATION</h3>
+
+                <li class="m-5 text-white">2023.06~2023.07 Korea IT 아카데미 - Python 수료</li>
+                <li class="m-5 text-white">2023.07~2024.01 Korea IT 아카데미 - Front-End / React 수료</li>
+                <li class="m-5 text-white">2023.07~2023.07 Korea IT 아카데미 - C언어 수료</li>
+                <li class="m-5 text-white">2023.07~2023.09 Korea IT 아카데미 - Java 수료</li>
+                <li class="m-5 mb-20 text-white">2023.09~2024.01 Korea IT 아카데미 - 웹개발 기초 과정 수료</li>
+            </div>
+
+            <div>
+                <h3 class="font-semibold text-2xl text-white pb-5">-SKILLS ABILITY</h3>
+                <div class="grid md:grid-cols-8 gap-0 m-5">
+
+                    <div>
+                        <svg class="border-2 border-gray-400 w-16 h-16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                            <path fill="#E65100" d="M41,5H7l3,34l14,4l14-4L41,5L41,5z"></path><path fill="#FF6D00" d="M24 8L24 39.9 35.2 36.7 37.7 8z"></path><path fill="#FFF" d="M24,25v-4h8.6l-0.7,11.5L24,35.1v-4.2l4.1-1.4l0.3-4.5H24z M32.9,17l0.3-4H24v4H32.9z"></path><path fill="#EEE" d="M24,30.9v4.2l-7.9-2.6L15.7,27h4l0.2,2.5L24,30.9z M19.1,17H24v-4h-9.1l0.7,12H24v-4h-4.6L19.1,17z"></path>
+                        </svg>
+                    </div>
+
+                    <div> 
+                        <svg class="border-2 border-gray-400 w-16 h-16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                            <path fill="#0277BD" d="M41,5H7l3,34l14,4l14-4L41,5L41,5z"></path><path fill="#039BE5" d="M24 8L24 39.9 35.2 36.7 37.7 8z"></path><path fill="#FFF" d="M33.1 13L24 13 24 17 28.9 17 28.6 21 24 21 24 25 28.4 25 28.1 29.5 24 30.9 24 35.1 31.9 32.5 32.6 21 32.6 21z"></path><path fill="#EEE" d="M24,13v4h-8.9l-0.3-4H24z M19.4,21l0.2,4H24v-4H19.4z M19.8,27h-4l0.3,5.5l7.9,2.6v-4.2l-4.1-1.4L19.8,27z"></path>
+                        </svg>
+                    </div>
+                   
+                    <div>
+                        <svg class="border-2 border-gray-400 w-16 h-16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                            <path fill="#ffd600" d="M6,42V6h36v36H6z"></path><path fill="#000001" d="M29.538 32.947c.692 1.124 1.444 2.201 3.037 2.201 1.338 0 2.04-.665 2.04-1.585 0-1.101-.726-1.492-2.198-2.133l-.807-.344c-2.329-.988-3.878-2.226-3.878-4.841 0-2.41 1.845-4.244 4.728-4.244 2.053 0 3.528.711 4.592 2.573l-2.514 1.607c-.553-.988-1.151-1.377-2.078-1.377-.946 0-1.545.597-1.545 1.377 0 .964.6 1.354 1.985 1.951l.807.344C36.452 29.645 38 30.839 38 33.523 38 36.415 35.716 38 32.65 38c-2.999 0-4.702-1.505-5.65-3.368L29.538 32.947zM17.952 33.029c.506.906 1.275 1.603 2.381 1.603 1.058 0 1.667-.418 1.667-2.043V22h3.333v11.101c0 3.367-1.953 4.899-4.805 4.899-2.577 0-4.437-1.746-5.195-3.368L17.952 33.029z"></path>
+                        </svg>
+                    </div>
+
+                    <div>
+                        <svg class="border-2 border-gray-400 w-16 h-16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                            <path fill="#0277BD" d="M24.047,5c-1.555,0.005-2.633,0.142-3.936,0.367c-3.848,0.67-4.549,2.077-4.549,4.67V14h9v2H15.22h-4.35c-2.636,0-4.943,1.242-5.674,4.219c-0.826,3.417-0.863,5.557,0,9.125C5.851,32.005,7.294,34,9.931,34h3.632v-5.104c0-2.966,2.686-5.896,5.764-5.896h7.236c2.523,0,5-1.862,5-4.377v-8.586c0-2.439-1.759-4.263-4.218-4.672C27.406,5.359,25.589,4.994,24.047,5z M19.063,9c0.821,0,1.5,0.677,1.5,1.502c0,0.833-0.679,1.498-1.5,1.498c-0.837,0-1.5-0.664-1.5-1.498C17.563,9.68,18.226,9,19.063,9z"></path><path fill="#FFC107" d="M23.078,43c1.555-0.005,2.633-0.142,3.936-0.367c3.848-0.67,4.549-2.077,4.549-4.67V34h-9v-2h9.343h4.35c2.636,0,4.943-1.242,5.674-4.219c0.826-3.417,0.863-5.557,0-9.125C41.274,15.995,39.831,14,37.194,14h-3.632v5.104c0,2.966-2.686,5.896-5.764,5.896h-7.236c-2.523,0-5,1.862-5,4.377v8.586c0,2.439,1.759,4.263,4.218,4.672C19.719,42.641,21.536,43.006,23.078,43z M28.063,39c-0.821,0-1.5-0.677-1.5-1.502c0-0.833,0.679-1.498,1.5-1.498c0.837,0,1.5,0.664,1.5,1.498C29.563,38.32,28.899,39,28.063,39z"/></svg>
+                        </svg>
+                    </div>
+
+                    <div>
+                        <svg class="border-2 border-gray-400 w-16 h-16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                            <path fill="#283593" fill-rule="evenodd" d="M22.903,3.286c0.679-0.381,1.515-0.381,2.193,0 c3.355,1.883,13.451,7.551,16.807,9.434C42.582,13.1,43,13.804,43,14.566c0,3.766,0,15.101,0,18.867 c0,0.762-0.418,1.466-1.097,1.847c-3.355,1.883-13.451,7.551-16.807,9.434c-0.679,0.381-1.515,0.381-2.193,0 c-3.355-1.883-13.451-7.551-16.807-9.434C5.418,34.899,5,34.196,5,33.434c0-3.766,0-15.101,0-18.867 c0-0.762,0.418-1.466,1.097-1.847C9.451,10.837,19.549,5.169,22.903,3.286z" clip-rule="evenodd"></path><path fill="#5c6bc0" fill-rule="evenodd" d="M5.304,34.404C5.038,34.048,5,33.71,5,33.255 c0-3.744,0-15.014,0-18.759c0-0.758,0.417-1.458,1.094-1.836c3.343-1.872,13.405-7.507,16.748-9.38 c0.677-0.379,1.594-0.371,2.271,0.008c3.343,1.872,13.371,7.459,16.714,9.331c0.27,0.152,0.476,0.335,0.66,0.576L5.304,34.404z" clip-rule="evenodd"></path><path fill="#fff" fill-rule="evenodd" d="M24,10c7.727,0,14,6.273,14,14s-6.273,14-14,14 s-14-6.273-14-14S16.273,10,24,10z M24,17c3.863,0,7,3.136,7,7c0,3.863-3.137,7-7,7s-7-3.137-7-7C17,20.136,20.136,17,24,17z" clip-rule="evenodd"></path><path fill="#3949ab" fill-rule="evenodd" d="M42.485,13.205c0.516,0.483,0.506,1.211,0.506,1.784 c0,3.795-0.032,14.589,0.009,18.384c0.004,0.396-0.127,0.813-0.323,1.127L23.593,24L42.485,13.205z" clip-rule="evenodd"></path>
+                        </svg>
+                    </div>
+
+                    <div>
+                        <svg class="border-2 border-gray-400 w-16 h-16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                            <path fill="#80deea" d="M24,34C11.1,34,1,29.6,1,24c0-5.6,10.1-10,23-10c12.9,0,23,4.4,23,10C47,29.6,36.9,34,24,34z M24,16	c-12.6,0-21,4.1-21,8c0,3.9,8.4,8,21,8s21-4.1,21-8C45,20.1,36.6,16,24,16z"></path><path fill="#80deea" d="M15.1,44.6c-1,0-1.8-0.2-2.6-0.7C7.6,41.1,8.9,30.2,15.3,19l0,0c3-5.2,6.7-9.6,10.3-12.4c3.9-3,7.4-3.9,9.8-2.5	c2.5,1.4,3.4,4.9,2.8,9.8c-0.6,4.6-2.6,10-5.6,15.2c-3,5.2-6.7,9.6-10.3,12.4C19.7,43.5,17.2,44.6,15.1,44.6z M32.9,5.4	c-1.6,0-3.7,0.9-6,2.7c-3.4,2.7-6.9,6.9-9.8,11.9l0,0c-6.3,10.9-6.9,20.3-3.6,22.2c1.7,1,4.5,0.1,7.6-2.3c3.4-2.7,6.9-6.9,9.8-11.9	c2.9-5,4.8-10.1,5.4-14.4c0.5-4-0.1-6.8-1.8-7.8C34,5.6,33.5,5.4,32.9,5.4z"></path><path fill="#80deea" d="M33,44.6c-5,0-12.2-6.1-17.6-15.6C8.9,17.8,7.6,6.9,12.5,4.1l0,0C17.4,1.3,26.2,7.8,32.7,19	c3,5.2,5,10.6,5.6,15.2c0.7,4.9-0.3,8.3-2.8,9.8C34.7,44.4,33.9,44.6,33,44.6z M13.5,5.8c-3.3,1.9-2.7,11.3,3.6,22.2	c6.3,10.9,14.1,16.1,17.4,14.2c1.7-1,2.3-3.8,1.8-7.8c-0.6-4.3-2.5-9.4-5.4-14.4C24.6,9.1,16.8,3.9,13.5,5.8L13.5,5.8z"></path><circle cx="24" cy="24" r="4" fill="#80deea"></circle>
+                        </svg>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
+      
+        <!-- project -->
+        <div id="project" class="py-40 mt-60">
+            <h1 class="text-5xl text-center tracking-widest">
+                <span class="text-white font-bold">Project</span>
+            </h1>
+            <div class="mt-8 ml-60 mr-60 border-t-8 border-t-white rounded"></div>
+        </div>
+
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div id="btnWrap">
+                <button type="button" id="popupBtn">
+                    <img src="https://github.com/chanss95/portpolio/blob/main/%EC%B9%B4%ED%8E%98.PNG?raw=true" alt="">
+                </button> <!-- 모달을 띄우는 버튼 -->
+              </div>
+          
+              <div id="modalWrap"> <!-- 모달 창을 감싸는 div -->
+                <span id="closeBtn">&times;</span> <!-- 모달을 닫는 X 버튼 -->
+                    <div id="modalBody">
+                        <img id="modalImg" class="mb-12 block mx-auto imgbox text-white rounded-xl" src="https://github.com/chanss95/portpolio/blob/main/%EC%B9%B4%ED%8E%98.PNG?raw=true" alt="">
+                            <h3 class="font-bold text-3xl pb-12">Cafe 웹페이지</h3><!-- 모달 창 내용 -->
+                            <ul class="font-semibold text-lg tracking-widest pb-4">Description</ul>
+                                <li class="tracking-widest pb-10" style="list-style: square;">HTML과 CSS를 활용한 간단한 홈페이지 디자인 입니다</li>
+                            <div class="pb-2 pt-6">
+                                <span class="font-semibold text-lg tracking-wides">Github</span>
+                                <span>-</span>
+                                <a class="tracking-widest text-sky-500 cursor-pointer underline" href="https://github.com/chanss95/-"> 
+                                    https://github.com/chanss95/cafe-company.html
+                                </a>
+                            </div>    
+                    </div>
+              </div>
+              <div class="text-white text-center flex flex-col justify-center">
+                <ul class="font-bold text-3xl pb-12">Cafe 웹페이지</ul>
+                <ul class="font-semibold tracking-widest pb-4 pt-6 text-xl">SKILLS</ul>
+                    <li class="tracking-widest" style="list-style: square;">HTML</li>
+                    <li class="tracking-widest" style="list-style: square;">CSS</li>
+                <ul class="font-semibold text-lg tracking-wides pb-4 pt-10 text-xl">TOOLS</ul>
+                    <li class="tracking-widest" style="list-style: square;">Visual Studio Code</li>
+              </div>
+        </div>    
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="text-white text-center flex flex-col justify-center">
+                <ul class="font-bold text-3xl pb-12">Company 웹페이지</ul>
+                <ul class="font-semibold tracking-widest pb-4 pt-6 text-xl">SKILLS</ul>
+                    <li class="tracking-widest" style="list-style: square;">HTML</li>
+                    <li class="tracking-widest" style="list-style: square;">CSS</li>
+                <ul class="font-semibold text-lg tracking-wides pb-4 pt-10 text-xl">TOOLS</ul>
+                    <li class="tracking-widest" style="list-style: square;">Visual Studio Code</li>
+              </div>
+            <div id="btnWrapA">
+                <button type="button" id="popupBtnA">
+                    <img src="https://github.com/chanss95/portpolio/blob/main/%ED%9A%8C%EC%82%AC.PNG?raw=true" alt="">
+                </button> <!-- 모달을 띄우는 버튼 -->
+              </div>
+          
+            <div id="modalWrapA"> <!-- 모달 창을 감싸는 div -->
+                <span id="closeBtnA">&times;</span> <!-- 모달을 닫는 X 버튼 -->
+                    <div id="modalBodyA">
+                        <img id="modalImgA" class="mb-12 block mx-auto imgbox text-white rounded-xl" src="https://github.com/chanss95/portpolio/blob/main/%ED%9A%8C%EC%82%AC.PNG?raw=true" alt="">
+                            <h3 class="font-bold text-3xl pb-12">Company 웹페이지</h3><!-- 모달 창 내용 -->
+                            <ul class="font-semibold text-lg tracking-widest pb-4">Description</ul>
+                                <li class="tracking-widest pb-10" style="list-style: square;">HTML과 CSS를 활용한 간단한 홈페이지 디자인 입니다</li>
+                            <div class="pb-2 pt-6">
+                                <span class="font-semibold text-lg tracking-wides">Github</span>
+                                <span>-</span>
+                                <a class="tracking-widest text-sky-500 cursor-pointer underline" href="https://github.com/chanss95/-"> 
+                                    https://github.com/chanss95/cafe-company.html
+                                </a>
+                            </div>   
+                    </div>
+            </div>
+        </div>     
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div id="btnWrapB">
+                <button type="button" id="popupBtnB">
+                    <img src="https://github.com/chanss95/portpolio/blob/main/todo.PNG?raw=true" alt="">
+                </button> <!-- 모달을 띄우는 버튼 -->
+              </div>
+          
+              <div id="modalWrapB"> <!-- 모달 창을 감싸는 div -->
+                <span id="closeBtnB">&times;</span> <!-- 모달을 닫는 X 버튼 -->
+                    <div id="modalBodyB">
+                        <img id="modalImgB" class="mb-12 block mx-auto imgbox text-white rounded-xl" src="https://github.com/chanss95/portpolio/blob/main/todo.PNG?raw=true" alt="">
+                            <h3 class="font-bold text-3xl pb-12">Todo-List</h3><!-- 모달 창 내용 -->
+                            <ul class="font-semibold text-lg tracking-widest pb-4">Description</ul>
+                                <li class="tracking-widest pb-10" style="list-style: square;">HTML과 CSS를 활용한 간단한 홈페이지 디자인 입니다</li>
+                            <div class="pb-2 pt-6">
+                                <span class="font-semibold text-lg tracking-wides">Github</span>
+                                <span>-</span>
+                                <a class="tracking-widest text-sky-500 cursor-pointer underline" href="https://github.com/chanss95/-"> 
+                                    https://github.com/chanss95/-
+                                </a>
+                            </div>
+                            <div class="pb-2 pt-6">
+                                <span class="font-semibold text-lg tracking-wides">Site</span>
+                                <span>-</span>
+                                <a class="tracking-widest text-sky-500 cursor-pointer underline" href="https://chanss95.github.io/todo-list/"> 
+                                    https://chanss95.github.io/todo-list/
+                                </a>
+                            </div>   
+                    </div>
+              </div>
+              <div class="text-white text-center flex flex-col justify-center">
+                <ul class="font-bold text-3xl pb-12">Todo-List-APP</ul>
+                <ul class="font-semibold tracking-widest pb-4 pt-6 text-xl">SKILLS</ul>
+                    <li class="tracking-widest" style="list-style: square;">HTML</li>
+                    <li class="tracking-widest" style="list-style: square;">CSS</li>
+                    <li class="tracking-widest" style="list-style: square;">JavaScript</li>
+                <ul class="font-semibold text-lg tracking-wides pb-4 pt-10 text-xl">TOOLS</ul>
+                    <li class="tracking-widest" style="list-style: square;">Visual Studio Code</li>
+              </div>
+        </div>    
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="text-white text-center flex flex-col justify-center">
+                <ul class="font-bold text-3xl pb-12">Portfolio</ul>
+                <ul class="font-semibold tracking-widest pb-4 pt-6 text-xl">SKILLS</ul>
+                    <li class="tracking-widest" style="list-style: square;">HTML</li>
+                    <li class="tracking-widest" style="list-style: square;">CSS</li>
+                    <li class="tracking-widest" style="list-style: square;">JavaScript</li>
+                <ul class="font-semibold text-lg tracking-wides pb-4 pt-10 text-xl">TOOLS</ul>
+                    <li class="tracking-widest" style="list-style: square;">Visual Studio Code</li>
+              </div>
+            <div id="btnWrapC">
+                <button type="button" id="popupBtnC">
+                    <img src="https://github.com/chanss95/portpolio/blob/main/%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4.PNG?raw=true" alt="">
+                </button> <!-- 모달을 띄우는 버튼 -->
+              </div>
+          
+              <div id="modalWrapC"> <!-- 모달 창을 감싸는 div -->
+                <span id="closeBtnC">&times;</span> <!-- 모달을 닫는 X 버튼 -->
+                    <div id="modalBodyC">
+                        <img id="modalImgC" class="mb-12 block mx-auto imgbox text-white rounded-xl" src="https://github.com/chanss95/portpolio/blob/main/%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4.PNG?raw=true" alt="">
+                            <h3 class="font-bold text-3xl pb-12">Portfolio</h3><!-- 모달 창 내용 -->
+                            <ul class="font-semibold text-lg tracking-widest pb-4">Description</ul>
+                                <li class="tracking-widest pb-10" style="list-style: square;">저의 포트폴리오입니다. 기능으로는 모달 프로젝트 사진을 누르면 모달창으로 오버레이 되게끔 구성하게끔 만들어봤습니다.</li>
+                            <div class="pb-2 pt-6">
+                                <span class="font-semibold text-lg tracking-wides">Github</span>
+                                <span>-</span>
+                                <a class="tracking-widest text-sky-500 cursor-pointer underline" href="https://github.com/chanss95/-"> 
+                                    https://github.com/chanss95/-
+                                </a>
+                            </div>
+                            <div class="pb-2 pt-6">
+                                <span class="font-semibold text-lg tracking-wides">Site</span>
+                                <span>-</span>
+                                <a class="tracking-widest text-sky-500 cursor-pointer underline" href="https://chanss95.github.io/portpolio/"> 
+                                    https://chanss95.github.io/portpolio/
+                                </a>
+                            </div>    
+                    </div>
+              </div>
+        </div>   
+        
+        
+        <script src="modalscript.js"></script>
+       
+
+        <!-- contact -->
+        <div id="contact" class="py-32">
+            <h1 class="text-5xl text-center tracking-widest">
+                <span class="text-white font-bold">Contact</span>
+            </h1>
+            <div class="mt-8 ml-60 mr-60 border-t-8 border-t-white rounded"></div>
+        </div>      
+       
+        <div class="grid grid-cols-1 md:grid-cols-2 ml-20 mr-20 tracking-widest">
+            <div>
+                <svg class="fill-white p-20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/>
+                </svg>
+                <p class="mb-10 text-3xl text-center text-white">
+                    Github
+                </p>
+                <p class="text-2xl text-center text-white">
+                    chanss95
+                </p>
+            </div>
+            <div>
+                <svg class="fill-white p-20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path d="M64 112c-8.8 0-16 7.2-16 16l0 22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1l0-22.1c0-8.8-7.2-16-16-16L64 112zM48 212.2L48 384c0 8.8 7.2 16 16 16l384 0c8.8 0 16-7.2 16-16l0-171.8L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64l384 0c35.3 0 64 28.7 64 64l0 256c0 35.3-28.7 64-64 64L64 448c-35.3 0-64-28.7-64-64L0 128z"/>
+                </svg>
+                <p class="mb-10 text-3xl text-center text-white">
+                    E-mail
+                </p>
+                <p class="text-2xl text-center text-white mb-80">
+                    chanss95@naver.com
+                </p> 
+            </div>
+
+    </main>
+
+        <!-- footer -->
+        <footer class="p-12 bg-gray-700">
+            <div class="border-t border-t-white mb-12 mt-10"></div>
+            <p class="text-right text-white font-family tracking-widest">
+                Copyright © Powered by <a href="#" class="underline"> Chan</a>
+            </p>
+        </footer>
+   
+
+
+</body>
+</html>
